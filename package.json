@@ -1,0 +1,51 @@
+{
+  "name": "@bearcookie/format-money",
+  "version": "1.0.0",
+  "description": "format money",
+  "main": "lib/bundle.umd.js",
+  "module": "lib/bundle.esm.js",
+  "typings": "lib/types/index.d.ts",
+  "scripts": {
+    "test": "jest --config jest.config.js --coverage --verbose -u",
+    "build": "rimraf ./lib && rollup -c",
+    "dev": "rollup -c rollup.config.js -w",
+    "format": "prettier --write --config .prettierrc src/*.ts",
+    "prepare": "yarn build",
+    "version": "yarn format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "format money",
+    "money",
+    "typescript"
+  ],
+  "type": "module",
+  "author": "dylan",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/jest": "^29.5.3",
+    "jest": "^29.6.2",
+    "prettier": "^3.0.1",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.28.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.35.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  },
+  "repository": "git+https://github.com/dylan-7/formatMoney.git",
+  "bugs": {
+    "url": "https://github.com/dylan-7/formatMoney/issues"
+  },
+  "homepage": "https://github.com/dylan-7/formatMoney#readme",
+  "publishConfig": {
+    "access": "public"
+  }
+}
