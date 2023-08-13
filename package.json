@@ -40,11 +40,11 @@
     "ts-jest": "^29.1.1",
     "typescript": "^5.1.6"
   },
-  "repository": "git+https://github.com/dylan-7/formatMoney.git",
+  "repository": "git+https://github.com/dylan-7/format-money.git",
   "bugs": {
-    "url": "https://github.com/dylan-7/formatMoney/issues"
+    "url": "https://github.com/dylan-7/format-money/issues"
   },
-  "homepage": "https://github.com/dylan-7/formatMoney#readme",
+  "homepage": "https://github.com/dylan-7/format-money#readme",
   "publishConfig": {
     "access": "public"
   }
