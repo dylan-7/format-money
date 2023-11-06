@@ -1,6 +1,6 @@
 {
   "name": "@bearcookie/format-money",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "format money",
   "main": "lib/bundle.umd.js",
   "module": "lib/bundle.esm.js",
